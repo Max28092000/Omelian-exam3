@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Omelian-exam3/static/css/main.eb012895.css",
+    "main.js": "/Omelian-exam3/static/js/main.73e8c88d.js",
+    "static/media/bgvideo.MP4": "/Omelian-exam3/static/media/bgvideo.29eb9f08387c11668198.MP4",
+    "index.html": "/Omelian-exam3/index.html",
+    "main.eb012895.css.map": "/Omelian-exam3/static/css/main.eb012895.css.map",
+    "main.73e8c88d.js.map": "/Omelian-exam3/static/js/main.73e8c88d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eb012895.css",
+    "static/js/main.73e8c88d.js"
+  ]
+}
