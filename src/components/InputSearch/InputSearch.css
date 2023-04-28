@@ -1,0 +1,45 @@
+.input-field{
+    display: flex;
+    justify-content: space-between;
+}
+.InputSearch_btn{
+    background-color: #1e1e1e52 !important;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 25%;
+}
+#email_inline {
+    height: 50px;
+    width: 90%;
+    border-bottom: 1px solid #0000009c;
+    background-color: #fff;
+    font-family: "Playfair Display";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7em;
+    letter-spacing: 0.08em;
+    color: #000000;
+    /* opacity: 0.5; */
+    padding-left: 1px;
+    outline: none;
+    border-radius: 10px;
+    margin: 0;
+    
+}
+
+.radio{
+    margin-left: 15px;
+}
+.label-radio > span{
+   color: var(--main-color);
+}
+
+
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
+    background-color: var(--main-color);
+}
+
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after {
+    border: 2px solid var(--main-color);
+}
+

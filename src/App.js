@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+
+import { Header } from "./layout/Header";
+import { Footer } from "./layout/Footer";
+
+import { Home } from "./pages/Home";
+import { NewFilms } from "./pages/NewFilms";
+import { About } from "./pages/About";
+import { NotFoundPage } from "./pages/NotFoundPage";
+
+import  bgvideo  from './assets/img/bgvideo.MP4';
+// import Button from 'react-bootstrap/Button';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import React, { useState, useEffect } from 'react';
+// import './darkMode.css';
 
 function App() {
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <video src={bgvideo} autoPlay loop muted />
+      <div className="bg"></div>
+      <Header/>
+      <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/newfilms' element={<NewFilms/>}/>
+          <Route path='/about' element={<About/>}/>
+          <Route path='*' element={<NotFoundPage/>}/>
+        </Routes>
+      <Footer/>
+    </>
   );
 }
 
